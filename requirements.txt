@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+groq
+qdrant-client
+sentence-transformers
+pypdf
+sqlalchemy
+redis
+python-multipart
+fastembed
