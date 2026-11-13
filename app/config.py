@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./app.db"
     qdrant_path: str = "./qdrant_data"
     collection_name: str = "knowledge_base"
-    llm_model: str = "llama-3.3-70b-versatile"
+    llm_model: str = "qwen/qwen3.8-27b"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
