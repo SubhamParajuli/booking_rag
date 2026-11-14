@@ -1,7 +1,11 @@
+import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from dotenv import load_dotenv
 
+load_dotenv()
+GROQ_API_KEY=os.getenv("GROQ_API_KEY")
 class Settings(BaseSettings):
-    groq_api_key: str
+    groq_api_key: str= GROQ_API_KEY
     redis_url: str = "redis://localhost:6379/0"
     database_url: str = "sqlite:///./app.db"
     qdrant_path: str = "./qdrant_data"

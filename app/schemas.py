@@ -23,7 +23,7 @@ class BookingDetails(BaseModel):
     date:str
     time:str
 
-class ChatRespose(BaseModel):
+class ChatResponse(BaseModel):
     session_id:str
     answer:str
     booking: Optional[BookingDetails]=None
